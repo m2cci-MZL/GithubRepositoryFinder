@@ -1,0 +1,120 @@
+body{
+	background-color: #e3e3e3 !important;
+}
+
+a:hover{
+	text-decoration: none !important;
+}
+
+.icon-fav{
+cursor: pointer;
+}
+
+.my-label{
+	color: white;
+    font-size: 14px;
+}
+
+.searchContainer{
+	margin-top: 35px;
+}
+
+.my-title{
+	color: white;
+}
+.div-icon-fav{
+	float: left !important;
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 88%;
+}
+.my-list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #D9230F;
+    border-color: #D9230F;
+}
+
+#container{
+	display: none;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.btns{
+	background-color: red ;
+	color: white;
+}
+.avatar {
+  width: 66px;
+}
+
+.profile {
+  margin-top: 10px;
+}
+
+.chart{
+	background-color: white;
+}
+
+.cl-center{
+	float: none;
+    margin: 0 auto;
+}
+
+.force-overflow {
+	max-height: 300px;
+    margin-bottom: 10px;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ededed; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+#overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgba(2, 2, 2, 0.75) none repeat scroll 0 0;
+  transition: 1s 0.4s;
+  display: none;
+}
+
+
+.loader {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #f00;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin:19.3% auto;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

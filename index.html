@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Stat Github</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="col-md-9">
+            <h1 class="my-title">Moteur de recherche Github</h1>
+        </div>
+        <div class="col-md-3 form-group float-right">
+            <label class="my-label"> Mes Favoris</label>
+            <select class="form-control" id="myFavoris">
+                <option value="">Selectionner</option>
+            </select>
+        </div>
+    </nav>
+
+    <div class="col-md-10 cl-center">
+        <div class="searchContainer">
+            <div class="row">
+                <div class="col-md-10">
+                    <input type="text" id="searchRepo" class="form-control" placeholder="Github Repository name..."
+                        >
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btns" id="searchBtn"> Recherche</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="container">
+
+            <div id="overlay">
+                <div class="loader"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 container">
+                    <h3>Repositories : <span id="reposCount"></span></h3>
+                    <div class=" list-group force-overflow" id="repos"></div>
+                </div>
+                <div class="col-md-3 container">
+                    <h3>Contributors : <span id="contributorsCount"></span></h3>
+                    <div class="list-group force-overflow" id="contributors"></div>
+                </div>
+                <div class="col-md-4 container">
+                    <h3>List of Commits : <span id="commitsCount"></span></h3>
+                    <div class="list-group force-overflow" id="commits"></div>
+                </div>
+            </div>
+            <br>
+
+            <div class="chart col-md-12">
+                <canvas id="lineChart"></canvas>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+        <!-- jQuery first, then Popper.js, Bootstrap JS , then ChartJs-->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <!-- Optional JavaScript -->
+        <script src="js/main.js"></script>
+</body>
+
+</html>
